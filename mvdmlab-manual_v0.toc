@@ -1,0 +1,47 @@
+\contentsline {chapter}{Welcome!}{5}{chapter*.2}
+\contentsline {paragraph}{}{6}{paragraph*.3}
+\contentsline {chapter}{About this Manual}{7}{chapter*.4}
+\contentsline {chapter}{Research Using Animals}{9}{chapter*.5}
+\contentsline {chapter}{Expectations}{11}{chapter*.6}
+\contentsline {section}{Everyone}{11}{section*.7}
+\contentsline {section}{Principal Investigator}{11}{section*.8}
+\contentsline {section}{Graduate Students}{11}{section*.9}
+\contentsline {section}{Research Technicians}{12}{section*.10}
+\contentsline {section}{Undergraduates}{12}{section*.11}
+\contentsline {section}{Code of Conduct}{12}{section*.12}
+\contentsline {chapter}{Lab space}{13}{chapter*.13}
+\contentsline {section}{General expectations}{13}{section*.14}
+\contentsline {section}{Experiment rooms}{14}{section*.15}
+\contentsline {section}{Fine Assembly Room (FAR)}{15}{section*.16}
+\contentsline {section}{Surgery and anteroom}{15}{section*.17}
+\contentsline {section}{Workshop}{15}{section*.18}
+\contentsline {section}{Shared facilities}{15}{section*.19}
+\contentsline {section}{Vivarium space}{15}{section*.20}
+\contentsline {section}{Offices}{15}{section*.21}
+\contentsline {chapter}{Digital space}{17}{chapter*.22}
+\contentsline {section}{Dropbox, Drive, Calendar}{17}{section*.23}
+\contentsline {section}{GitHub}{17}{section*.24}
+\contentsline {section}{Slack}{17}{section*.25}
+\contentsline {section}{Wiki}{17}{section*.26}
+\contentsline {section}{Mailing list}{17}{section*.27}
+\contentsline {chapter}{Computing}{19}{chapter*.28}
+\contentsline {section}{Lab computers}{19}{section*.29}
+\contentsline {subsection}{Single user machines (grad students and postdocs)}{19}{subsection*.30}
+\contentsline {subsection}{Shared machines}{20}{subsection*.31}
+\contentsline {subsection}{Experimental machines}{20}{subsection*.32}
+\contentsline {section}{Skills}{21}{section*.33}
+\contentsline {chapter}{Data management}{23}{chapter*.34}
+\contentsline {section}{Data storage}{24}{section*.35}
+\contentsline {section}{Data promotion}{24}{section*.36}
+\contentsline {section}{Data use cases}{24}{section*.37}
+\contentsline {chapter}{Animal care and recordkeeping}{25}{chapter*.38}
+\contentsline {section}{Animal ownership and responsibility}{25}{section*.39}
+\contentsline {chapter}{PBS and Dartmouth}{27}{chapter*.40}
+\contentsline {section}{Training required by Dartmouth}{27}{section*.41}
+\contentsline {section}{Important people and contact info}{27}{section*.42}
+\contentsline {section}{Dartmouth resources}{27}{section*.43}
+\contentsline {chapter}{Beyond the lab}{29}{chapter*.44}
+\contentsline {chapter}{Appendix: Subject email format template}{31}{chapter*.45}
+\contentsline {chapter}{Appendix: Yearly evaluation forms}{33}{chapter*.46}
+\contentsline {chapter}{Bibliography}{35}{chapter*.47}
+\contentsfinish 
