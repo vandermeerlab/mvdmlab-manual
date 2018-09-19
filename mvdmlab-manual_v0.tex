@@ -865,25 +865,43 @@ following:
   compressible: typical examples include Neuralynx .nvt (video
   tracking) files\sidenote{See section XXX for a quick primer on data
     compression.}.}
-\item{Upload the data to the lab server. See section XXX for
-  instructions.}
+\item{Upload the data to the {\it Incoming} folder on the lab
+  server. See section XXX for instructions.}
 \item{Move the data out of the location where it is saved, into a
-  folder specific to your subject or experiment. }
+  folder specific to your subject or experiment.}
+\item{Following completion of data collection from that subject or
+  experiment, verify that indeed all data is correct and present on
+  the server, and then delete it from the data acquisition
+  machine.\sidenote{This is an important step, because if there is no
+    space available on a data acquisition machine, we cannot acquire
+    more data!}}
 \end{itemize}
 
-
-
-Backup strategies.
+The lab server uses a redundant data storage system that can tolerate
+failure of a single hard drive without causing loss of data. The
+contents of the datavault folder are periodically backed up to
+``cold'' offsite storage. However, it is good practive to also make
+your own personal backup of your raw and promoted data. One good way
+of doing this is to store that data on your desktop workstation, or
+move it to an external HDD, just in case.
 
 \section{Data promotion}
 
+What exactly is included in a promoted data set depends on the
+specific experiment, but the main idea is that the data should be
+organized systematically according to lab conventions, contain
+annotations in the form of \doccls{ExpKeys} files, contain an overall
+description of the data set, and include PDFs of relevant notes and
+histology.
 
+Examples of nice promoted data with description include:
 
-Incoming, InProgress, Promoted
+Alyssa's data
+Jimmie's data
 
 \section{Data use cases}
 
-Typical use cases for data. Your own project. MvdM needs figure for a
+Typical use cases for data include: Your own project. MvdM needs figure for a
 grant. New student comes in with a different question. A colleague
 wants to check your results.
 
