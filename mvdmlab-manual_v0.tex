@@ -199,8 +199,8 @@ contributions under the same terms. You may obtain a copy of the full
 License at \url{https://creativecommons.org/licenses/by-nc-sa/4.0/}.
 
 \par Inspired by similar lab manuals by others. Particularly helpful
-was the wonderful example from the
-\href{https://github.com/alylab/labmanual}{Aly lab}.
+were the wonderful examples from the
+\href{http://jpeelle.net/peellelab_manual.pdf}{Peelle} and \href{https://github.com/alylab/labmanual}{Aly} labs.
 
 \par Typeset in Palatino Linotype using \LaTeX{} and the
 \doccls{tufte-book} class.
@@ -277,8 +277,9 @@ lab.}
 \includegraphics[width=\linewidth]{images/R050_raster.png}
 }
 \caption{Some beautiful data, recorded from R050's hippocampus (by
-  Alyssa Carey). Vertical tick marks indicate spikes, blue trace shows
-  a local field potential. Scale bar is 1 s.}
+  Alyssa Carey). Vertical tick marks indicate spikes (one row per
+  neuron, sorted by place field location); horizontal axis indicates
+  time; blue trace shows a local field potential. Scale bar is 1 s.}
 \label{fig:raster}
 \end{marginfigure}
 
@@ -289,7 +290,7 @@ animals directly, it may seem like chapter on
 you, but it will give you important insights into how the lab
 operates.
 
-\paragraph{} Welcome. Let's do some great science together!
+\newthought{Welcome}. Let's do some great science together!
 
 \begin{chapquote}{{\it MvdM}}
 \end{chapquote}
@@ -297,16 +298,14 @@ operates.
 % Start the main matter (normal chapters)
 \mainmatter
 
-\chapter{About this Manual}
+\chapter{About this manual}
 
-This document describes the principles that shape how the
+\newthought{This document} describes the principles that shape how the
 members of the lab interact and work. Rather than dealing with the
 nuts and bolts of how to get stuff done in the lab, the manual is
 about lab philosophy, expectations, and resources. It is an
-introduction to the lab.
-
-The lab manual is one of several classes (categories) of shared
-documents in the lab, which are:
+introduction to the lab. The lab manual is one of several classes
+(categories) of shared documents in the lab, which are:
 
 \begin{itemize}
 \item{{\it Lab Manual}. You are looking at it. It contains information
@@ -324,7 +323,7 @@ documents in the lab, which are:
     \url{mvdmlab-protocols} repository}, and a separate repository for
   \doccls{behavioral tasks} and associated computer
   code\sidenote{\url{mvdmlab-tasks}}. This documentation is on GitHub
-  so that we can say things like, ``I used vesion 1.1 of the histology
+  so that we can say things like, ``I used version 1.1 of the histology
   protocol'', and so that we can track changes to those protocols as
   well as the reasons for those changes. If you perform procedures in
   the lab, you are expected to follow and to contribute to these
@@ -348,8 +347,7 @@ quick; Slack, wiki), to content that is moderately stable and takes a
 bit more effort to change (but easier to track; GitHub), to principles
 that rarely change (lab manual). For instance, an idea for an
 experiment may be initially discussed on Slack, lead to a draft
-protocol that is shared there. Before that protocol is used, it will
-be pushed to GitHub. 
+protocol shared there, and then get pushed to GitHub. 
 
 There are a number of other kinds of documents used in the lab that,
 unlike the above categories, are not typically consulted by multiple
@@ -393,17 +391,20 @@ possible, and maximize the usefulness of the research outcomes.
 This means that:
 
 \begin{itemize}
-\item{We strive to design experiments so the outcomes will be as
-  informative as possible.}
-\item{We aim to collect the highest quality data possible.}
-\item{For the data to be interpretable, records need to be kept.}
 \item{We take care of our animals. If animals are comfortable and well
   cared for, they will perform the behavioral tasks we want, be easy
   to handle.}
-\item{Data is valuable, and should be protected.}
-\item{Data should be shared. To facilitate use by others, it needs to
-  be annotated, and stored in a format so that others can use it.}
+\item{We strive to design experiments so the outcomes will be as
+  informative as possible.}
+\item{We aim to collect the highest quality data possible.}
+\item{For the data to be interpretable, good records need to be kept.}
+\item{Data is valuable. It needs to be protected, and be easy to
+  use. This means it needs to be organized and annotated in a specific
+  common format.}
 \end{itemize}
+
+In sum, the fact we are working with animals shapes both our lab
+philosophy and many practical aspects of working in the lab.
 
 \begin{marginfigure}
 \centering{
@@ -417,9 +418,6 @@ Doing research with animals shapes not only the philosophy of the lab,
 but also has pervasive consequences for day-to-day work. Later
 sections of this manual, such as XXX and YYY, will deal in more detail
 with the nuts and bolts.
-
-In sum, the fact we are working with animals shapes both our lab
-philosophy and many practical aspects of working in the lab.
 
 All of these components will be discussed on more detail in the
 relevant sections. This chapter is intended to provide some key
@@ -450,10 +448,58 @@ may come to nothing.
 %%% EXPECTATIONS %%%
 %%%%%%%%%%%%%%%%%%%%
 
-\chapter{Expectations}\label{ch:expectations}
+\chapter{Values and Expectations}\label{ch:expectations}
 
-% everyone
-\section{Everyone}
+The lab values personal and scientific integrity, respect for each
+other, for animals, for equipment, and for data. We care about shaping
+and maintaining an environment that fosters personal development,
+curiosity, exploration, and the joy of discovery. We choose to work on
+hard problems that require dedication, persistence, resourcefulness,
+and resilience. We are humble. We support each other in when things
+get tough, and celebrate each other's successes. We value
+opportunities to learn from each other, set high standards but do not
+judge.
+
+Holding these values implies the following:
+
+\section{Expectations: everyone}
+
+\begin{itemize}
+\item{Take initiative. If you are stuck, try something different. Ask
+  someone.}
+\item{Document. Anything you do more than once, or that you or someone
+  else might have to do again, should be written up as a
+  \doccls{protocol}. Anything done with an animal is a
+  \doccls{procedure} and needs to be logged. Good recordkeeping is
+  essential to doing good science. Keep track of what you did with
+  experiments and analyses in your \doccls{lab notebook}.}
+\item{Communicate. Tell others what you are working on, what is
+  working well and what could be improved. Post on updates on Slack
+  frequently.}
+\item{Contribute to community resources and space. If you notice
+  something that can be improved, fix it, mention it on Slack, or open
+  a GitHub issue.}
+\item{Collaborate. Share your expertise. Make arrangements with others
+  to take care of their animals one weekend and reciprocate
+  another. Offer to do code reviews, read each other's manuscript,
+  offer feedback on practive talks.}
+\item{Showing up. There will be days when it feels like you aren't
+  making any progress and nothing is working. Don't underestimate the
+  power of an iterative routine.}
+\item{Be a little obsessive.}
+\item{Be punctual.}
+\item{Take care of yourself. Know when it's time to push, and when
+  it's time to take a walk in Pine Park\sidenote{See here for a guide
+    to some of Hanover's best trails, accessible from the lab in the
+    space of a lunch break.}.}
+\item{Tell others when you notice they did something well, or when
+  they made your life a little better today\sidenote{We have the
+    \doccls{octothorp}, awarded during lab meeting. But don't stop
+    there!}.}
+\item{Keep at it. While brilliant ideas, creativity and skill
+  certainly help, the best predictor of success is how consistently
+  you put in the work.}
+\end{itemize}
 
 Values: personal and scientific integrity; respect for animals,
 humans, equipment, data, space. Supportive and collaborative learning
@@ -510,6 +556,153 @@ want to do our best to help eradicate.
 Some specific things that work well:
 
 Long version: laid out in Dartmouth policies.
+
+\chapter{Doing good science}
+
+This chapter provides some general strategies that effective
+scientists use.
+
+\section{Failing fast and often, but learn from your mistakes}
+
+Science involves a lot of trial and error. You will be asking
+questions whose answers are often not yet known, using combinations of
+techniques and analyses that do not yet exist or have not been applied
+to your particular question. So you want to find ways to learn from
+errors as quickly as possible, and ways to avoid making them in the
+first place.
+
+The general principle to do this is to find ways to get feedback
+often. For projects that are at the idea stage, talk with your peers
+about it, and solicit feedback from more senior colleagues. Find out
+what the likely pitfalls and challenging steps are, and who has
+already tried or even solved them before.
+
+For projects that are experimental, the same idea applies: find a
+setup in which the feedback cycle is as short as it can be. For
+instance, if your project requires recording from a brain area that
+the lab has not recorded from before, chronically implanting an animal
+would take much longer until you find out if you hit, compared to
+doing an acute (non-recovery) surgery.
+
+Experiments often consist of multiple steps or components that all
+need to work -- failure in any component will make all the other steps
+in vain\sidenote{A typical example is that if you do not follow
+  aseptic surgical procedures, an infection may cause your implant to
+  detach. Having built perfect electrodes is then moot.}. This implies
+that you should find ways to get feedback about whether each component
+is working correctly. For instance, inspect your tetrodes under a
+microscope before attaching them to the interface board.
+
+For analysis projects, a similar logic again applies: formulate
+expectations about what the output of a given analysis step should
+look like. 
+
+For all of these processes, apply a hacker/startup mindset that takes
+the quickest path towards a minimal working example or proof of
+principle. At that point, if the results look promising, you should
+clean up, improve and document things.
+
+Often, things will not work. This is not always a problem -- sometimes
+you just want to try something and only follow up if it looks like
+things are going to work. However, some failures actually block your
+way forward, and you will need to resolve them. Notes, as described
+next, will help you (and others) identify what the problem might
+be. Making the same mistake twice is not a good use of time and
+resources.
+
+\section{Documentation and taking good notes}
+
+One way to avoid making the same mistake twice or to avoid making them
+in the first place is to have good documentation.
+
+A related but different reason to care about documentation is that a
+desirable property of a scientific study is that it should be possible
+for others to replicate the result.
+
+\subsection{Lab notebook}
+
+\subsection{Protocols}
+
+Protocols are step-by-step instructions of procedures used in the
+lab. Anything you expect to do again in the future should be written
+up as a protocol. If you only do a thing once, you should still take
+notes!
+
+Protocols are hosted on GitHub. Why?
+
+What makes a good protocol? Use standard structure (purpose,
+ingredients, equipment). Step-by-step instructions: it should be a
+recipe, and algorithm. The main procedures should be clean and minimal
+so that it is easy to get an overview, but adding copious notes and
+explanations as footnotes/sidenotes/appendices are great. Steps should
+be as easy as possible to follow, with checks/tests that can be used
+to tell if things are working as expected. Pictures can be very
+helpful here.
+
+Some example protocols are:
+
+If you use a protocol, update it regularly, even if it is to say when
+it was last used successfully (and by whom).
+
+
+\section{Asking good questions}
+
+{\it Questions about science.}
+
+Experiments and analyses are ways of asking nature a question. Your
+goal should never be to obtain a certain answer. You should formulate
+expectations about possible answers and consider if those would in
+fact inform the question you are asking.
+
+Working models are good sources of questions.
+
+{\it Questions about computer code.} 
+
+When troubleshooting computer code, aim to create a \doccls{Minimal,
+  Complete, and Verifiable example}. In doing so, you make it easier
+for others to replicate the problem you are experiencing, helping them
+help you. Moreover, often you'll find that in the process of creating
+such an example, you discover the source of the problem. See
+\href{https://stackoverflow.com/help/mcve}{this page} on Stack
+Overflow\sidenote{\url{www.stackoverflow.com}, an excellent resource
+  for crowdsourced answers to programming issues.} for more detailed
+instructions.
+
+
+\section{Reading papers}
+
+Inspectional, analytical, syntopical
+
+Bibliography management
+
+Find the classic papers and intellectual roots of the question you are
+working on. If this doesn't motivate or energize you at least from
+time to time, ask yourself how much you actually care about your question.
+
+\section{Communication}
+
+\subsection{Writing well}
+
+Clear thesis
+
+Structure of argument
+
+Vomit draft, results packet
+
+Iterating often
+
+Citing: first, best, and most recent (this is a good rule of thumb to
+guide your reading, too.)
+
+Simpler is better
+
+See SOFTWARE SECTION for more info on recommendations.
+
+\subsection{Importance of visuals}
+
+Simpler is better
+
+See SOFTWARE SECTION.
 
 %%%%%%%%%%%%%%%%%%
 %%% FACILITIES %%%
@@ -629,7 +822,7 @@ Our room is...
 %%%%%%%%%%%%%%%%%%
 %%%
 %%%%%%%%%%%%%%%%%%
-\chapter{Digital space}
+\chapter{Electronic resources}
 
 \section{Dropbox, Drive, Calendar}
 
@@ -789,7 +982,84 @@ Style guide.
 Other important software: reference manager, LaTeX if you plan to
 write a paper or a thesis. Adobe Creative Suite for making figures.
 
+How to ask good questions. Stack Overflow on how to create a
+\href{https://stackoverflow.com/help/mcve}{minimal, complete, and
+  verifiable} example.
 
+\section{Software}
+
+In general, you should feel free use whatever software is the best
+tool for the job\sidenote{...where ``best'' is defined as the
+  intersection between the capabilities of the software itself,
+  suitability for the task at hand, and the user's ability to use it
+  correctly.}, and you should feel free to do so. However, there are
+startup costs associated with learning how to use new software, and
+the lab has built up expertise and resources in a number of software
+packages that work well. Learning to use these software packages will
+help you be productive in the lab, and will be applicable in other
+settings as well.
+
+\begin{marginfigure}
+\centering{
+\includegraphics[width=\linewidth]{images/analysis_schematics.pdf}
+}
+\caption{Example data analysis workflow, made with \href{www.graphviz.org}{Graphviz}}
+\label{fig:analysis-schematic}
+\end{marginfigure}
+
+\begin{itemize}
+\item{{\bf Git} is a tool for ``collaborative version control'': a way
+  to keep track of changes made to files such as computer code,
+  experimental protocols or manuscrupt drafts, and to coordinate those
+  changes across multiple contributors.}
+\item{{\bf MATLAB} is a scientific computing environment that includes
+  a programming language, libraries for performing specific tasks, a
+  development environment with a fully featured editor, debugger, and
+  interpreter, and many other features. It is widely used for data
+  analysis in neuroscience. Although it is not free, Dartmouth has a
+  site license that enables you to use it
+  (\href{http://caligari.dartmouth.edu/downloads/matlab}{download
+    page}). Python is becoming increasingly popular, and is far more
+  widely used than MATLAB outside neuroscience. However, various
+  toolboxes used in the lab such as Chronux and FieldTrip are still
+  MATLAB-only, and MvdM is still a beginner in Python.}
+\item{{\bf Adobe Creative Suite} is expensive, but produces superior
+  documents. We use Illustrator to touch up and group together figure
+  panels for manuscripts based on raw output from MATLAB or Graphviz,
+  and to make posters. Photoshop is sometimes used to process image
+  files such as those from histology. Free alternatives such as
+  Inkscape and GIMP exist, can do the job for simple documents, but I
+  don't (yet) recommend them for publication-quality output.}
+\item{{\bf Graphviz} produces schematics such as the one in Figure
+  \ref{fig:analysis-schematic}. Unlike
+  `what-you-see-is-what-you-get'' design software such as Photoshop
+  and Illustrator, the Graphviz tools create graphics from a plain
+  text source file. The source file contains a recipe for what the
+  graphic output should look like.}
+\item{\LaTeX. Unlike ``what-you-see-is-what-you-get'' content creation
+  programs such as Word, LaTeX creates documents from a plain text
+  source file. The source file contains instructions for what the
+  document should look like. Compared to Word, LaTeX does much better
+  with equations, produces more professional-looking
+  documents\sidenote{Especially where typesetting features such as
+    spacing, kerning, and ligatures are concerned.}, and makes it much
+  easier to maintain large documents.}
+\end{itemize}
+
+Note that several of these require you to use the Command Line
+(Terminal).
+
+\subsection{Operating Systems}
+
+Lab computers use Windows and/or Ubuntu Linux. There are a few reasons
+for this: the data acquisition machines require Windows (Neuralynx) or
+Windows/Linux (Open Ephys), and custom machine builds are generally
+cheaper for PCs than for Apple Macs. Nevertheless, many lab members
+have Mac personal laptops that run OS X, and most of the above
+software works fine on them. However, some Neuralynx loaders only work
+on Windows, some codebase functions have only been compiled to work on
+some OSes, and the lab only has licenses for some software (Adobe) to
+work on Windows.
 
 %%%%%%%%%%%%%%%%%%%%%%%%%
 %%%% DATA MANAGEMENT %%%%
@@ -888,22 +1158,61 @@ move it to an external HDD, just in case.
 \section{Data promotion}
 
 What exactly is included in a promoted data set depends on the
-specific experiment, but the main idea is that the data should be
-organized systematically according to lab conventions, contain
-annotations in the form of \doccls{ExpKeys} files, contain an overall
-description of the data set, and include PDFs of relevant notes and
-histology.
+specific experiment, but typical features include the following:
 
-Examples of nice promoted data with description include:
+\begin{itemize}
+\item{Data should be organized and (re)named according to the lab Data
+File Naming Scheme (link).}
+\item{Make sure raw and intermediate data files that are no longer
+  needed are removed.}
+\item{\doccls{ExpKeys} file.}
+\item{If applicable, task-specific \doccls{metadata} file(s).}
+\item{A description of the task/experiment.}
+\item{PDFs of relevant task notes and histology.}
+\end{itemize}
 
-Alyssa's data
-Jimmie's data
+As you collect data, you should start drafting an example
+\doccls{ExpKeys} file. Prior to starting data collection, you should
+have created a \doccls{protocol} that describes the procedures
+used. You should use this protocol as the basis for a description of
+the task/experiment.
+
+Examples of nice promoted data with description include Alyssa's
+\doccls{MotivationalT} data (link) and Jimmie's \doccls{CueCoding}
+data\sidenote{\url{https://github.com/jgmaz/vStrCueCoding}}.
 
 \section{Data use cases}
 
-Typical use cases for data include: Your own project. MvdM needs figure for a
-grant. New student comes in with a different question. A colleague
-wants to check your results.
+Some examples (``use cases'') that motivate careful data management
+include:
+
+\begin{itemize}
+\item{When analyzing your own data, you want to be able to easily
+  specify which subject(s) and session(s) you are working on.}
+\item{If you have a question that can be answered with someone else's
+  data, you want to be able to ``plug in'' that data into your
+  existing workflow. When I (MvdM) joined the Redish lab, I ran a
+  comparison of dorsolateral striatum, ventral striatum, and
+  hippocampus data\sidenote{van der Meer et al.\ Neuron 2010}. This
+  was made possible through the use of a consistent data formatting
+  and annotation scheme.}
+\item{When publishing your work, it is the policy of the lab, and an
+  increasing number of journals and funders, that your data is made
+  publicly available. You want it to be easy to use and understand, so
+  that your colleagues are not annoyed with you and you don't have to
+  answer their emails telling you things aren't working.}  
+\item{Before you get to publishing, you will need to convince MvdM
+  of your results and conclusions. This likely invloves
+  him running your code on your data. That will only work if you've
+  organized your data correctly.}
+\item{MvdM is always working on applications to obtain research
+  funding. Some of these applications, and the pilot data used to
+  support them, are planned in advance; others are more
+  spur-of-the-moment, or even if planned, new insights can
+  happen. Thus, there is often a need to produce an analysis or figure
+  in short order. This is only possible, or at least made a lot
+  easier, if the data is ready for analysis.}.
+\end{itemize}
 
 
 %%%%%%%%%%%%%%%%%%%%
