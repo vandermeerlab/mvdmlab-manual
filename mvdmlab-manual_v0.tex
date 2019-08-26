@@ -205,7 +205,7 @@ were the wonderful examples from the
 \par Typeset in Palatino Linotype using \LaTeX{} and the
 \doccls{tufte-book} class.
 
-\par\textit{Version 0.1, \monthyear}
+\par\textit{Version 0.2, \monthyear}
 \end{fullwidth}
 
 % r.4 contents
@@ -233,7 +233,8 @@ wonder what it all means.
 \centering{
 \includegraphics[width=0.7\linewidth]{images/shortcut_mazes.png}
 }
-\caption{Some strange mazes. (From Emily Irvine's {\it shortcut} experiment.)}
+\caption{Example maze configurations. (From Emily Irvine's {\it
+    shortcut} experiment.)}
 \label{fig:shortcut}
 \end{marginfigure}
 
@@ -311,9 +312,9 @@ introduction to the lab. The lab manual is one of several classes
 
 \begin{itemize}
 \item{{\it Lab Manual}. You are looking at it. It contains information
-  that does not change frequently. Only I (MvdM) can change the lab
+  that does not change frequently. Only MvdM can change the lab
   manual, but I'd love to hear from you if you have thoughts of
-  suggestions! Periodically, we will review the manual as a group at
+  suggestions! Periodically, we may review the manual as a group at
   lab meeting to determine what needs updating.}
 \item{Private {\it GitHub
     repositories}\sidenote{\url{www.github.com/vandermeerlab}. Because
@@ -322,7 +323,7 @@ introduction to the lab. The lab manual is one of several classes
     organization.} that contain \doccls{protocols},
   i.e.\ documentation for experimental procedures\sidenote{Examples
     include electrode plating, histology, drive building, et cetera:
-    \url{mvdmlab-protocols} repository}, and a separate repository for
+    see the \url{mvdmlab-protocols} repository}, and a separate repository for
   \doccls{behavioral tasks} and associated computer
   code\sidenote{\url{mvdmlab-tasks}}. This documentation is on GitHub
   so that we can say things like, ``I used version 1.1 of the
@@ -332,7 +333,7 @@ introduction to the lab. The lab manual is one of several classes
   to these protocols; see the \href{sec:notes}{Documentation} section for
   more detailed information.}
 \item{A {\it lab
-    wiki}\sidenote{\url{discovery.dartmouth.edu/~mvdm/wiki}} that
+    wiki}\sidenote{\url{rcweb.dartmouth.edu/~mvdm/wiki}} that
   contains tutorials, guides, lists of useful links, et cetera. The
   wiki is a more dynamic, easier to edit resource for content that
   doesn't rely as much on version control. The wiki currently contains
@@ -356,19 +357,19 @@ protocol shared there, and then get pushed to GitHub.
 There are a number of other kinds of documents used in the lab that,
 unlike the above categories, are not typically consulted by multiple
 lab members. Most important among these are (1) animal records,
-described in more detail in the \href{sec:animalcare}{Animal Care and
-  Recordkeeping} section, and (2) lab notes, described in the
-\href{sec:notes}{Documentation} section.
+described in more detail in the \hyperref[ch:animal-management]{Animal
+  Recordkeeping} chapter, and (2) lab notebooks/notes, described in
+the \hyperref[sec:notes]{Keeping Good Notes} section.
 
-\greybox{ \textsf{{\bf Important}: I assume the lab manual and
-    procedures on GitHub are accurate. This means that you should
-    follow all of the policies and procedures contained in the manual
-    and GitHub. If you notice something that seems to be wrong, please
-    let me know (for the lab manual) or change it yourself (if on
-    GitHub). If there is something in the lab manual or GitHub that
-    you notice people aren't doing, please bring this up at lab
-    meeting, or to me directly. Don't assume this is okay (it's
-    not).}}
+\greybox{
+\textsf{\textbf{Important:} I assume the lab manual and procedures on GitHub are
+  accurate. This means that you should follow all of the policies and
+  procedures contained in the manual and GitHub. If you notice
+  something that seems to be wrong, please let me know (for the lab
+  manual) or change it yourself (if on GitHub). If there is something in
+  the lab manual or GitHub that you notice people aren't doing, please
+  bring this up at lab meeting, or to me directly. Don't assume this
+  is okay (it's not).}}
 
 %%% RESEARCH USING ANIMALS &&&
 \chapter{Research Using Animals}
@@ -377,20 +378,20 @@ described in more detail in the \href{sec:animalcare}{Animal Care and
 \newthought{We use animals} in the lab, based on the conviction that
 doing so accelerates scientific progess and provides a net benefit to
 humans, and perhaps to animals, too. There are many examples of
-scientific discoveries that were directly enabled by resarch in
-animals\sidenote{Some good examples are highlighted in the
-  \href{https://www.mpg.de/10882259/MPG_Whitepaper.pdf}{``Position
-    statement of the Max Planck Society concerning the use of animals
-    in experiments for basic research''}}. However, past successes do
-not mean we can experiment freely on any animal we want. The use of
-animals for research carries a moral, scientific, and legal obligation
-to only perform experiments when the benefits can be reasonably
-expected to outweigh the costs, to do so only if no suitable
-alternatives are available, and to do so while caring for our animals
-to the fullest extent possible. These notions are often phrased as the
-``3 R's'' (reduction, replacement, refinement)\sidenote{If you will be
-  working with animals, you will learn about this in the
-  \href{https://about.citiprogram.org/en/homepage/}{CITI training}.}.
+scientific discoveries that were directly enabled by research in
+animals\sidenote{Some good examples are highlighted in the ``Position
+  statement of the Max Planck Society concerning the use of animals in
+  experiments for basic research''
+  (\href{https://www.mpg.de/10882259/MPG_Whitepaper.pdf}{link})}. However,
+past successes do not mean we can experiment freely on any animal we
+want. The use of animals for research carries a moral, scientific, and
+legal obligation to only perform experiments when the benefits can be
+reasonably expected to outweigh the costs, to do so only if no
+suitable alternatives are available, and to do so while caring for our
+animals to the fullest extent possible. These notions are often
+phrased as the ``3 R's'' (reduction, replacement,
+refinement)\sidenote{Good references on this topic include
+  \href{https://www.nc3rs.org.uk/the-3rs}{NC3Rs}.}.
 
 \begin{marginfigure}
 \centering{
@@ -414,13 +415,13 @@ This means that:
 \item{We strive to {\it design experiments such that the outcomes will
     be as informative as possible}. There are many resources on this
   topic, including the specific demands on rigor and reproducibility
-  mandated by the
-  NIH\sidenote{\url{https://grants.nih.gov/policy/reproducibility/index.htm}}. Many
+  mandated by the NIH
+  (\href{https://grants.nih.gov/policy/reproducibility/index.htm}{link}). Many
   experimental design decisions can be brought into focus by perparing
-  a formal preregistration of your proposed
-  experiment\sidenote{\url{https://cos.io/prereg/}}, which requires justifying how
-  many subjects you plan to run, what analyses you will carry out, and
-  the inferences supported by possible outcomes.}
+  a formal \href{https://cos.io/prereg/}{preregistration} of your
+  proposed experiment, which requires justifying how many subjects you
+  plan to run, what analyses you will carry out, and the inferences
+  supported by possible outcomes.}
 
 \item{We aim to collect the {\it highest quality data possible}. We
   often invest a tremendous amount of time in each animal through
@@ -460,26 +461,33 @@ above points in more detail.
 \newthought{Animal research at Dartmouth} is overseen by the
 Institutional Animal Care and Use Committee (IACUC). All work with
 animals needs to receive prior approval from the IACUC in the form of
-{\it animal protocols}\sidenote{{\it Animal protocol}: document
-  outlining the scientific rationale, aims, and a set of proposed
-  experiments, including specific animal numbers for each. The total
-  number of approved animals may not be exceeded.}. Only
-procedures\sidenote{{\it Procedure:} Any action or change beyond
-  picking an animal up in the vivarium (e.g.\ for changing cages or
-  weighing) counts as a procedure. This includes, among others,
-  placing an animal on a restricted diet, running a behavioral task,
-  and injecting an analgesic.} listed in the animal protocol may be
-performed on animals, must be performed as described, and only by
-approved personnel listed on the protocol. We are {\bf required} to
-log all procedures. Invasive procedures, such as electrode implant
-surgery, require follow-up procedures providing post-operative care
-(administration of analgesia, monitoring). The lab's currently active
-animal protocols can be found in the \#iacuc channel on Slack, and in
-a binder in the surgery anteroom (Moore B100).
+{\it Animal Use Protocols} (AUPs) \sidenote{{\it Animal Use Protocol}:
+  document outlining the scientific rationale, aims, and a set of
+  proposed experiments, including specific animal numbers for
+  each. The total number of approved animals may not be
+  exceeded.}. Only {\it procedures}\sidenote{{\it Procedure:} Any
+  action or change beyond picking an animal up in the colony room
+  (e.g.\ for changing cages or weighing) counts as a procedure. This
+  includes, among others, placing an animal on a restricted diet,
+  running a behavioral task, and injecting an analgesic.} that have
+been approved by the IACUC may be performed on animals, and only by
+approved personnel (listed on the protocol). We are {\bf required} to
+log all procedures; details on this process can be found in the
+\hyperref[ch:animal-management]{Animal recordkeeping}
+chapter. Invasive procedures, such as electrode implant surgery,
+require follow-up procedures providing post-operative care
+(administration of analgesia, monitoring).
 
-\greybox{ \textsf{\textbf{Important}: Violations of the above requirements,
-    such as performing a procedure not previously approved, or
-    neglecting to log a procedure that was performed, are
+To be formally approved to perform any of the procedures described in
+an AUP, a number of on-line and in-person training modules need to be
+completed. To initiate the training process, e-mail MvdM, and please
+forward copies of any confirmation of training completion. The current
+version of all AUPs can be found in the \url{#animalcareandrecords}
+channel on the \href{http://mvdmlab.slack.com}{lab Slack}.
+
+\greybox{ \textsf{\textbf{Important}: Violations of the above
+    requirements, such as performing a procedure not previously
+    approved, or neglecting to log a procedure that was performed, are
     serious. Beyond potentially violating our moral responsibility
     towards our animal subjects, the lab, the department, and
     Dartmouth risks losing federal approval to perform animal research
@@ -487,8 +495,8 @@ a binder in the surgery anteroom (Moore B100).
     likelihood of mistakes from happening; however, we are all human
     and mistakes do happen. If you notice any slips, please take
     action: rectify if you can, consider how to prevent this happening
-    again, and let MvdM know. Honesty is valued.}}
-
+    again, and let MvdM know. Transparency and honesty about what
+    occurred is always the best course of action.}}
 
 
 %%%%%%%%%%%%%%%%%%%%
@@ -514,12 +522,14 @@ Comparative Medicine Research (CCMR). CCMR maintains a satellite
 animal facility in the basement of Moore Hall, where our animals are
 housed and cared for by CCMR staff. CCMR also employs veterinary
 staff, who are ``on call'' to provide support and advice (and in
-unusual cases, can mandate an animal be euthanized). When performing
-invasive procedures (surgery) and when administering drugs, CCMR
-requests that these are reported using a special cage
-card\sidenote{Picture of procedure cage card.}. Writing procedures on
-these cards is {\it not} sufficient logging: you also need to log the
-procedure(s) in the animal's binder.
+unusual cases, can mandate an animal be euthanized). Up-to-date
+contact information for CCMR staff and vets can be found in the
+\url{#animalcareandrecords} channel. When performing invasive
+procedures (surgery) and when administering drugs, CCMR requests that
+these are reported using a special cage card\sidenote{Picture of
+  procedure cage card.}. Writing procedures on these cards is {\it
+  not} sufficient logging: you also need to log the procedure(s) in
+the animal's binder.
 
 By default, CCMR staff will feed, water, and change cages for all our
 animals. We pay them a {\it per diem} fee to do this. Unless requested
@@ -912,7 +922,9 @@ next, will help you (and others) identify what the problem might
 be. Making the same mistake twice is not a good use of time and
 resources.
 
+
 \section{Documentation and taking good notes}\label{sec:notes}
+\label{sec:notes}
 
 \newthought{One way to avoid} making the same mistake twice or to
 avoid making them in the first place is to have good
@@ -1710,7 +1722,6 @@ include:
   in short order. This is only possible, or at least made a lot
   easier, if the data is ready for analysis.}.
 \end{itemize}
-
 
 
 \backmatter
