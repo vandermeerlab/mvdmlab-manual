@@ -215,19 +215,19 @@ were the wonderful examples from the
 % r.9 introduction
 \chapter{Welcome!}
 
-\begin{chapquote}{Luna, {\it Double Feature} (1995)}
-I didn't change my mind, it changed all by itself.
-\end{chapquote}
+%\begin{chapquote}{Luna, {\it Double Feature} (1995)}
+%I didn't change my mind, it changed all by itself.
+%\end{chapquote}
 
 \newthought{The van der Meer lab} brings together people who share an
 interest in how the brain works. We aim to better understand how
 learning, memory, and decision-making arise from the coordinated
 activity of neurons. In the pursuit of this goal, we perform brain
-surgery, design and construct strange mazes, painstakingly build small
-devices so we can read the minds of rats, solder tiny circuit boards
-to even tinier wires, write thousands of lines of computer code,
-collect beautiful data, produce even more beautiful plots, and many
-other activities.
+surgery, design and construct eclectic mazes, painstakingly build
+small devices so we can read the minds of rats, solder tiny circuit
+boards to even tinier wires, write thousands of lines of computer
+code, collect beautiful data, produce even more beautiful plots, and
+wonder what it all means.
 
 \begin{marginfigure}[-4cm]
 \centering{
@@ -241,7 +241,8 @@ other activities.
 motivations for engaging in these lab activities, but there are a few
 common threads: curiosity about how the physical stuff of the brain
 gives rise to thought and to behavior, a love for animals and
-computers alike, a desire to help solve some of the big mysteries, and
+computers\sidenote{Or, at least, a love of computable things.}
+alike, a desire to help solve some of the big mysteries, and
 contributing to human knowledge and ultimately a better world.
 
 \begin{marginfigure}[3cm]
@@ -255,22 +256,23 @@ contributing to human knowledge and ultimately a better world.
 \newthought{Our efforts are {\it collaborative}}, not only within the
 lab, but also with other labs in the department of Psychological \&
 Brain Sciences at Dartmouth. We share equipment, space, and interests
-with these labs, and collaborate on joint projects and on creating a
-scientifically exciting and supportive culture where everyone can
-thrive. We also have joint projects with other labs around the
-world. We collaborate because the problems we are trying to solve are
-hard, and because learning from and working with others is one of the
-great joys of working in science!
+with these labs, and collaborate not only on joint scientific
+projects, but also on creating a scientifically exciting and
+supportive culture where everyone can thrive. We also have joint
+projects with other labs around the world. We collaborate because the
+problems we are trying to solve are hard, and because learning from
+and working with others is one of the great joys of working in
+science!
 
 \newthought{Working with others} brings not only joy, but also
 expectations. Coding and data analysis can be fun, but are full of
 pitfalls. Sharing space and expensive equipment with others demands
-respect. There is satisfaction in getting an experiment to work, but
-it can be a long slog to get there. Perhaps most importantly of all,
-the use of animals in research comes with practical as well as moral
-responsibilities. {\it This manual is intended to provide guidance on how
-to navigate these issues, with particular focus on the van der Meer
-lab.}
+care and respect. There is satisfaction in getting an experiment to
+work, but it can be a long slog to get there. Perhaps most importantly
+of all, the use of animals in research comes with practical as well as
+moral responsibilities. {\it This manual is intended to provide
+  guidance on how to navigate these issues, with particular focus on
+  the van der Meer lab.}
 
 \begin{marginfigure}
 \centering{
@@ -309,8 +311,8 @@ introduction to the lab. The lab manual is one of several classes
 
 \begin{itemize}
 \item{{\it Lab Manual}. You are looking at it. It contains information
-  that does not change frequently. Only MvdM can change the lab
-  manual, but he wants to hear from you if you have thoughts of
+  that does not change frequently. Only I (MvdM) can change the lab
+  manual, but I'd love to hear from you if you have thoughts of
   suggestions! Periodically, we will review the manual as a group at
   lab meeting to determine what needs updating.}
 \item{Private {\it GitHub
@@ -323,11 +325,12 @@ introduction to the lab. The lab manual is one of several classes
     \url{mvdmlab-protocols} repository}, and a separate repository for
   \doccls{behavioral tasks} and associated computer
   code\sidenote{\url{mvdmlab-tasks}}. This documentation is on GitHub
-  so that we can say things like, ``I used version 1.1 of the histology
-  protocol'', and so that we can track changes to those protocols as
-  well as the reasons for those changes. If you perform procedures in
-  the lab, you are expected to follow and to contribute to these
-  protocols; see section XXX for a more detailed explanation.}
+  so that we can say things like, ``I used version 1.1 of the
+  histology protocol'', and so that we can track changes to those
+  protocols as well as the reasons for those changes. If you perform
+  procedures in the lab, you are expected to follow and to contribute
+  to these protocols; see the \href{sec:notes}{Documentation} section for
+  more detailed information.}
 \item{A {\it lab
     wiki}\sidenote{\url{discovery.dartmouth.edu/~mvdm/wiki}} that
   contains tutorials, guides, lists of useful links, et cetera. The
@@ -335,10 +338,11 @@ introduction to the lab. The lab manual is one of several classes
   doesn't rely as much on version control. The wiki currently contains
   the lab's MATLAB data analysis tutorials.}
 \item{We also have a lab {\it Slack}
-  team\sidenote{\url{mvdmlab.slack.com}} which is used for day to day
-  communication. It hosts shared documents best described as
-  ``everything else'', something that isn't a protocol, task, or
-  tutorial.}
+  team\sidenote{\url{mvdmlab.slack.com}. If you are new to the lab and
+    you haven't received an invitation email to join it, e-mail MvdM.}
+  which is used for day to day communication. It hosts shared
+  documents best described as ``everything else'', something that
+  isn't a protocol, task, or tutorial.}
 \end{itemize}
 
 These different venues reflect an overall organization ranging from
@@ -352,18 +356,19 @@ protocol shared there, and then get pushed to GitHub.
 There are a number of other kinds of documents used in the lab that,
 unlike the above categories, are not typically consulted by multiple
 lab members. Most important among these are (1) animal records,
-described in more detail in section XXX, and (2) lab notebooks,
-described in section YYY. 
+described in more detail in the \href{sec:animalcare}{Animal Care and
+  Recordkeeping} section, and (2) lab notes, described in the
+\href{sec:notes}{Documentation} section.
 
-\greybox{
-\textsf{I assume the lab manual and procedures on GitHub are
-  accurate. This means that you should follow all of the policies and
-  procedures contained in the manual and GitHub. If you notice
-  something that seems to be wrong, please let me know (for the lab
-  manual) or change it yourself (if on GitHub). If there is something in
-  the lab manual or GitHub that you notice people aren't doing, please
-  bring this up at lab meeting, or to me directly. Don't assume this
-  is okay (it's not).}}
+\greybox{ \textsf{{\bf Important}: I assume the lab manual and
+    procedures on GitHub are accurate. This means that you should
+    follow all of the policies and procedures contained in the manual
+    and GitHub. If you notice something that seems to be wrong, please
+    let me know (for the lab manual) or change it yourself (if on
+    GitHub). If there is something in the lab manual or GitHub that
+    you notice people aren't doing, please bring this up at lab
+    meeting, or to me directly. Don't assume this is okay (it's
+    not).}}
 
 %%% RESEARCH USING ANIMALS &&&
 \chapter{Research Using Animals}
@@ -373,24 +378,25 @@ described in section YYY.
 doing so accelerates scientific progess and provides a net benefit to
 humans, and perhaps to animals, too. There are many examples of
 scientific discoveries that were directly enabled by resarch in
-animals\sidenote{Some good examples are highlighted in the ``Position
-  statement of the Max Planck Society concerning the use of animals in
-  experiments for basic research'',
-  \url{https://www.mpg.de/10882259/MPG_Whitepaper.pdf}}. However, past
-successes do not mean we can experiment freely on any animal we
-want. The use of animals for research carries a moral, scientific, and
-legal obligation to only perform experiments when the benefits can be
-reasonably expected to outweigh the costs, to do so only if no
-suitable alternatives are available, and to do so while caring for our
-animals to the fullest extent possible. These notions are often
-phrased as the ``3 R's'' (reduction, replacement,
-refinement)\sidenote{Some references on the 3 Rs}.
+animals\sidenote{Some good examples are highlighted in the
+  \href{https://www.mpg.de/10882259/MPG_Whitepaper.pdf}{``Position
+    statement of the Max Planck Society concerning the use of animals
+    in experiments for basic research''}}. However, past successes do
+not mean we can experiment freely on any animal we want. The use of
+animals for research carries a moral, scientific, and legal obligation
+to only perform experiments when the benefits can be reasonably
+expected to outweigh the costs, to do so only if no suitable
+alternatives are available, and to do so while caring for our animals
+to the fullest extent possible. These notions are often phrased as the
+``3 R's'' (reduction, replacement, refinement)\sidenote{If you will be
+  working with animals, you will learn about this in the
+  \href{https://about.citiprogram.org/en/homepage/}{CITI training}.}.
 
 \begin{marginfigure}
 \centering{
 \includegraphics[width=0.7\linewidth]{images/rat-mask.jpg}
 }
-\caption{Visualization of human-rat synergy.}
+\caption{A visual allegory for synergy between humans and rats.}
 \label{fig:rat-mask}
 \end{marginfigure}
 
@@ -405,13 +411,14 @@ This means that:
   cared for, they will perform the behavioral tasks we want, be easier
   to handle, and the resulting fundings will be more likely to generalize.}
 
-\item{We strive to {\it design experiments such that the outcomes will be
-  as informative as possible}. There are many resources on this topic,
-  including the specific demands on rigor and reproducibility mandated
-  by the NIH\sidenote{NIH reference}. Many experimental design
-  decisions can be brought into focus by perparing a formal
-  preregistration of your proposed
-  experiment\sidenote{Preregistration}, which requires justifying how
+\item{We strive to {\it design experiments such that the outcomes will
+    be as informative as possible}. There are many resources on this
+  topic, including the specific demands on rigor and reproducibility
+  mandated by the
+  NIH\sidenote{\url{https://grants.nih.gov/policy/reproducibility/index.htm}}. Many
+  experimental design decisions can be brought into focus by perparing
+  a formal preregistration of your proposed
+  experiment\sidenote{\url{https://cos.io/prereg/}}, which requires justifying how
   many subjects you plan to run, what analyses you will carry out, and
   the inferences supported by possible outcomes.}
 
@@ -424,8 +431,9 @@ This means that:
 \item{For the data to be interpretable, {\it good records} need to be
   kept. Recordkeeping includes informal written notes and the
   completion of highly organized templates produced as procedures are
-  performed. It also encompasses the process of translating these
-  notes into computer-readable formats suitable for data analysis.}
+  performed. Good recordkeeping also encompasses the process of
+  translating these notes into computer-readable formats suitable for
+  data analysis.}
 
 \item{{\it Data is valuable}. It needs to be protected against inadvertent
   loss, and its impact needs to be maximized by making it possible for
@@ -444,27 +452,30 @@ above points in more detail.
 \centering{
 \includegraphics[width=0.9\linewidth]{images/rat_with_objects.png}
 }
-\caption{A cartoon rat with some objects. Figure from Dudchenko et al.}
+\caption{A cartoon rat with some objects (from
+  \citealt{Eichenbaum1999a}).}
 \label{fig:rat-with-objects}
 \end{marginfigure}
-
-\section{Institutional oversight}
 
 \newthought{Animal research at Dartmouth} is overseen by the
 Institutional Animal Care and Use Committee (IACUC). All work with
 animals needs to receive prior approval from the IACUC in the form of
-{\it protocols}\sidenote{{\it Protocol}: document outlining the
-  scientific rationale, aims, and a set of proposed experiments,
-  including specific animal numbers for each. The total number of
-  approved animals may not be exceeded.}. Only {\it
-  procedures}\sidenote{{\it Procedure:} Any action or change beyond
-  picking an animal up in the colony room (e.g.\ for changing cages or
-  weighing) counts as a procedure} that have been approved by the
-IACUC may be performed on animals, and only by approved personnel
-(listed on the protocol). We are required to log all
-procedures. Invasive procedures, such as electrode implant surgery,
-require follow-up procedures providing post-operative
-care (administration of analgesia, monitoring).
+{\it animal protocols}\sidenote{{\it Animal protocol}: document
+  outlining the scientific rationale, aims, and a set of proposed
+  experiments, including specific animal numbers for each. The total
+  number of approved animals may not be exceeded.}. Only
+procedures\sidenote{{\it Procedure:} Any action or change beyond
+  picking an animal up in the vivarium (e.g.\ for changing cages or
+  weighing) counts as a procedure. This includes, among others,
+  placing an animal on a restricted diet, running a behavioral task,
+  and injecting an analgesic.} listed in the animal protocol may be
+performed on animals, must be performed as described, and only by
+approved personnel listed on the protocol. We are {\bf required} to
+log all procedures. Invasive procedures, such as electrode implant
+surgery, require follow-up procedures providing post-operative care
+(administration of analgesia, monitoring). The lab's currently active
+animal protocols can be found in the \#iacuc channel on Slack, and in
+a binder in the surgery anteroom (Moore B100).
 
 \greybox{ \textsf{\textbf{Important}: Violations of the above requirements,
     such as performing a procedure not previously approved, or
@@ -476,7 +487,25 @@ care (administration of analgesia, monitoring).
     likelihood of mistakes from happening; however, we are all human
     and mistakes do happen. If you notice any slips, please take
     action: rectify if you can, consider how to prevent this happening
-    again, and let MvdM know.}}
+    again, and let MvdM know. Honesty is valued.}}
+
+
+
+%%%%%%%%%%%%%%%%%%%%
+%%% ANIMAL CARE %%%%
+%%%%%%%%%%%%%%%%%%%%
+\section{Animal care and recordkeeping}
+\label{sec:animalcare}
+
+\newthought{Keeping detailed and accurate records} on each of our
+animals is an IACUC requirement (and indirectly a federal issue), as
+well as scientifically important. The main principles are that for any
+animal that is currently alive, there must a binder (or a section in a
+binder) with that animal that contains an up to date record of all
+procedures\sidenote{What counts as a procedure: anything beyond what's
+  required to change a cage or weigh an animal. If in doubt, log it
+  anyway.} performed on that animal, as well as records of their
+weight.
 
 \newthought{Animal husbandry\sidenote{That is, animal care not
     consisting of procedures, such as changing cages and providing
@@ -485,7 +514,58 @@ Comparative Medicine Research (CCMR). CCMR maintains a satellite
 animal facility in the basement of Moore Hall, where our animals are
 housed and cared for by CCMR staff. CCMR also employs veterinary
 staff, who are ``on call'' to provide support and advice (and in
-unusual cases, can mandate an animal be euthanized).
+unusual cases, can mandate an animal be euthanized). When performing
+invasive procedures (surgery) and when administering drugs, CCMR
+requests that these are reported using a special cage
+card\sidenote{Picture of procedure cage card.}. Writing procedures on
+these cards is {\it not} sufficient logging: you also need to log the
+procedure(s) in the animal's binder.
+
+By default, CCMR staff will feed, water, and change cages for all our
+animals. We pay them a {\it per diem} fee to do this. Unless requested
+otherwise, all animals receive {\it ad lib}\sidenote{Ad libitem is the
+  Latin phrase for, literally, ``to your libido'', i.e.\ as much as
+  desired. Incidentally, {\it i.e.}\ is Latin for {\it id est}, ``it
+  is''.} food and water.
+
+We can also request CCMR to feed rats 18g/day. This is a useful amount
+that prevents rats from getting obese. To request this, use the
+relevant cage card\sidenote{This one.}. For any other food/water
+regimens, you'll need to use the ``Experimenter will feed/water'' cage
+card. Doing so implies that the experimenter listed takes
+\doccls{ownership}\sidenote{As the owner of an animal, you are
+  responsible for logging its weight and all procedures. If the animal
+  is food and/or water-restricted, you are responsible for supplying
+  those things, and logging that you have done so.} of that animal.
+
+When animals first arrive, they are typically group-housed (multiple
+animals per cage). They are named\sidenote{Rats are named Rxxx, where
+  xxx is a 3-digit counter that it incremented with each new
+  animal. Mice are named Mxxx.} and start out with \doccls{communal}
+status. Communal animals do not have an owner yet. They are weighed
+weekly by the \doccls{Communal Animal Caretaker}\sidenote{Note that to
+  track weights of group-housed animals, some kind of mark needs to be
+  used. The lab convention is to write numbers 1, 2, 3 etc.\ on the
+  base of the tail with a Sharpie. 1 indicates the animal with the
+  lowest number. Mouse tails are too small to write numbers; stripes
+  or rings can be used instead.}. When communal animals are below 400g
+in weight, the Caretaker also handles them weekly (about 5 minutes per
+animal appears to be the sweet spot, although you may want to take
+ownership of an animal that will be implanted with a hyperdrive early
+on so that it can be handled more). When communal animals reach 400g,
+the Caretaker separates them into individual cages so that CCMR can
+feed them 18g/day.
+
+Once you euthanize and animal (or request it to be euthanized),
+collect all weight and procedure logs, along with any additional
+information (notes from behavior, for instance), scan them into a
+single PDF\sidenote{The departmental copier/scanner is great for this,
+  you can feed it a pile of documents and it can email you a PDF.} and
+upload to the data vault (see the section on Promoting Data).
+
+If you are working with animals, read the \href{github link}{Animal
+  Recordkeeping Protocol}, which provides detailed procedures for the
+above.
 
 %%%%%%%%%%%%%%%%%%%%
 %%% EXPECTATIONS %%%
@@ -493,32 +573,111 @@ unusual cases, can mandate an animal be euthanized).
 
 \chapter{Values and Expectations}\label{ch:expectations}
 
-The lab values personal and scientific integrity, respect for each
-other, for animals, for equipment, and for data. We care about shaping
-and maintaining an environment that fosters personal development,
-curiosity, exploration, and the joy of discovery. We choose to work on
-hard problems that require dedication, persistence, resourcefulness,
-and resilience. We are humble. We support each other in when things
-get tough, and celebrate each other's successes. We value
+\newthought{The lab values} personal and scientific integrity, respect
+for each other, for animals, for equipment, and for data. We care
+about shaping and maintaining an environment that fosters personal
+development, curiosity, exploration, and the joy of discovery. We
+choose to work on hard problems that require dedication, persistence,
+resourcefulness, resilience, and humility. We support each other in
+when things get tough, and celebrate each other's successes. We value
 opportunities to learn from each other, set high standards but do not
 judge.
 
-Holding these values implies the following:
+\newthought{Holding these values} implies the following:
+
+\section{Code of Conduct}
+
+\newthought{The lab is committed} to providing a safe, friendly, and
+accepting environment for everybody. We will not tolerate any verbal
+or physical harassment or discrimination on the basis of gender,
+gender identity and expression, sexual orientation, disability,
+physical appearance, body size, country of origin, native language,
+race, or religion. We will not tolerate intimidation, stalking,
+following, unwanted photography or video recording, sustained
+disruption of talks or other events, inappropriate physical contact,
+and unwelcome sexual attention. To my knowledge, none of these have
+ever occurred in the lab -- let's keep it that way.
+
+Nevertheless, if you notice or experience any of these, please tell
+MvdM. If you have an issue with a member of the lab, tell MvdM. If you
+have an issue with MvdM that you are not comfortable discussing, the
+graduate student representative, department chair, and other faculty
+are available, as well as the resources listed below. Please be
+assured that your concerns will be taken seriously, that you will be
+listened to, and that you can share them without fear of
+retaliation. Note the distinction between {\it private resources} and
+{\it confidential resources}\sidenote{Private resources are legally
+  obligated to share a disclosure of sexual misconduct with the Title
+  IX office, including all details that are known. This is to ensure
+  adequate support for those who may need it. Confidential resources
+  may not share any information (with very few exceptions).}.
+
+Before taking pictures or videos with a lab member in them, ask their
+consent first. Ask consent again before posting to social media. If
+you'd like to take pictures or videos of an experimental subject, ask
+permission from MvdM first.
+
+\newthought{Important resources}:
+
+\begin{itemize}
+\item{Dartmouth policies: \href{https://student-affairs.dartmouth.edu/policy/standards-conduct}{undegraduate} and \href{https://graduate.dartmouth.edu/policy/code-conduct-nonacademic-regulations}{graduate} code of conduct}
+\item{PBS \href{https://pbs.dartmouth.edu/diversity}{diversity page}.}
+\item{Confidential resources on campus:
+  \href{http://www.wiseuv.org/dartmouth---home.html}{WISE}\sidenote{A
+    WISE advocate is on campus one day a week; see the website for
+    details.},
+  \href{https://students.dartmouth.edu/health-service/counseling/about/clinical-services/counseling}{counselors}
+  at Dick's House, religious leaders at the
+  \href{https://students.dartmouth.edu/tucker/about/pastoral-counseling}{Tucker
+    Center}}
+\item{Private resources: MvdM, PBS department chair, PBS graduate
+  chair, other faculty you trust}
+\item{Dartmouth \href{https://journeys.dartmouth.edu/knowyourrights/resources/}{Title IX resources}}
+\end{itemize}
 
 \section{Expectations: everyone}
 
+\newthought{Big picture:}
+
 \begin{itemize}
-\item{Behave respectfully and professionally towards others in the
-  lab, department, and beyond. Doing this well requires considering
-  how your actions (or lack of them) affect others\sidenote{Recurse
-    guidelines}. We value behaviors that enable everyone to
-  flourish. Behaviors that exclude anyone based on race, gender,
-  religion, or appearance are not OK. See the Code of Conduct below
-  for details.}
-\item{Treat your animal subjects with care.}
-\item{Participate in our weekly lab meetings.}
-\item{Take initiative. If you are stuck, try something different. Ask
-  someone.}
+\item{{\it Community}. Behave respectfully and professionally towards
+  others in the lab, department, and beyond. Doing this well requires
+  considering how your actions (or lack of them) affect
+  others\sidenote{See the
+    \href{https://www.recurse.com/code-of-conduct}{Recurse guidelines}
+    for some great examples.}. We value behaviors that enable everyone
+  to flourish.}
+\item{{\it Collaborate}. Share your expertise. Make arrangements with others
+  to take care of their animals one weekend and reciprocate
+  another. Offer to do code reviews, read each other's manuscript,
+  offer feedback on practive talks.}
+\item{{\it Contribute} to community resources and space. If you notice
+  something that can be improved, fix it, mention it on Slack, or open
+  a GitHub issue.}
+\item{{\it Communicate}. Tell others what you are working on, what is
+  working well and what could be improved. Post updates on Slack
+  frequently -- sharing when you are stuck and what you have tried
+  to get unstuck is just as important as sharing successes.}
+\item{Take care of yourself. Know when it's time to push, and when
+  it's time to take a walk in Pine Park\sidenote{See
+    \href{https://www.hanovernh.org/conservation-commission/pages/trail-maps}{here}
+    for a guide to some of Hanover's best trails, accessible from the
+    lab in the space of a lunch break.}.}
+\item{Tell others when you notice they did something well, or when
+  they made your life a little better today\sidenote{We have the
+    \doccls{octothorp}, awarded during lab meeting. But don't stop
+    there!}.}
+\item{Be a little obsessive, and have high standards.}
+\item{Show up and keep at it. While brilliant ideas, creativity and skill
+  certainly help, the best predictor of success is how consistently
+  you put in the work. There will be days when it feels like you aren't
+  making any progress and nothing is working. Don't underestimate the
+  power of an iterative routine}
+\end{itemize}
+
+\newthought{Small picture}:
+
+\begin{itemize}
 \item{Document. Anything you do more than once, or that you or someone
   else might have to do again, should be written up as a
   \doccls{experimental protocol}\sidenote{Not to be confused with an
@@ -526,63 +685,43 @@ Holding these values implies the following:
   \doccls{procedure} and needs to be logged. Good recordkeeping is
   essential to doing good science. Keep track of what you did with
   experiments and analyses in your \doccls{lab notebook}.}
-\item{Communicate. Tell others what you are working on, what is
-  working well and what could be improved. Post on updates on Slack
-  frequently.}
-\item{Contribute to community resources and space. If you notice
-  something that can be improved, fix it, mention it on Slack, or open
-  a GitHub issue.}
-\item{Collaborate. Share your expertise. Make arrangements with others
-  to take care of their animals one weekend and reciprocate
-  another. Offer to do code reviews, read each other's manuscript,
-  offer feedback on practive talks.}
-\item{Showing up. There will be days when it feels like you aren't
-  making any progress and nothing is working. Don't underestimate the
-  power of an iterative routine.}
-\item{Be a little obsessive.}
+\item{Treat your animal subjects with care, as laid out in the
+  \href{ch:animals}{Research with Animals} section.}
+\item{Participate in our weekly lab meetings.}
 \item{Be punctual and consistent if you are running experiments. Hours
   can be somewhat flexible, but in general all full-time lab members
   are expected to be in at work during at least the core hours of
   11-4, so that we can interact. If you are going to be away from the
   lab for more than a day or two, enter it into the lab calendar.}
-\item{Take care of yourself. Know when it's time to push, and when
-  it's time to take a walk in Pine Park\sidenote{See here for a guide
-    to some of Hanover's best trails, accessible from the lab in the
-    space of a lunch break.}.}
-\item{Tell others when you notice they did something well, or when
-  they made your life a little better today\sidenote{We have the
-    \doccls{octothorp}, awarded during lab meeting. But don't stop
-    there!}.}
-\item{Keep at it. While brilliant ideas, creativity and skill
-  certainly help, the best predictor of success is how consistently
-  you put in the work.}
-\item{If you have an issue with a member of the lab, tell MvdM. If you
-  have an issue with MvdM that you are not comfortable discussing, the
-  graduate student representative, department chair, and other faculty
-  are available.}
-\item{Pictures/videos. Before taking pictures with a lab member in
-  them, ask their consent first. Ask consent again before posting to
-  social media. If you'd like to take pictures of an experimental
-  subject, ask MvdM.}
+\item{If you purchase anything with a \doccls{chart string}\sidenote{A
+    Dartmouth-internal number that allows expenses to be charged to
+    the correct account and category.}, take a picture of the receipt
+  and post it in the \#admin channel on Slack.}
 \end{itemize}
 
 % pi
 \section{Principal Investigator}
 
+\newthought{I promise to:}
+
 \begin{itemize}
 \item{Provide an environment where great science can be done and
   people can thrive.}
-\item{Give my perspective on where the field is going, and how work in
-  the lab will help shape that direction.}
+\item{Model the different aspects of the scientific process and
+  different components of an academic career.}
+\item{Give my perspective on
+  where the field is going, and how work in the lab will help shape
+  that direction.}
 \item{Secure operating funds for the lab, which may include your
   stipend or salary.}
 \item{Be a mentor, supporter, and resource for you. This includes
   providing you with training in diverse aspects of science, helping
-  you plan your career, promote your work and provide you with
-  opportunities.}
-\item{Hold weekly lab meetings and project one-on-ones with you.}
-\item{Give you timely feedback on project ideas, conference posters,
-  talks, manuscripts, figures, grants.}
+  you set priorities in the short and long term, promote your work and
+  helping you identify opportunities.}
+\item{Set high standards and commit the time to help you meet them. In
+  particular, I will hold weekly lab meetings and project one-on-ones
+  with you. I will also give you timely feedback on project ideas,
+  conference posters, talks, manuscripts, figures, grants.}
 \item{Support and monitor your trajectory in yearly feedback
   meetings.}
 \end{itemize}
@@ -590,9 +729,12 @@ Holding these values implies the following:
 \section{Graduate Students}\label{sec:gradstudents}
 
 \begin{itemize}
-\item{Your goal is to make an original contribution to knowledge, in the
-form of a thesis that you will defend. Become really good at at least
-one marketable technique or skill.}
+\item{By the time you graduate, you are expected to make an original
+  contribution to knowledge, in the form of a thesis that you will
+  defend.} 
+\item{In the process of reaching this goal, you will build a portfolio
+  of published work as well as a set of skills. Become really good at
+  at least one marketable technique or skill.}
 \item{When you first join the lab, you are expected to take on an existing
 or previously proposed project, so you can learn the ropes with plenty
 of interaction time with MvdM and senior lab members. As you progress,
@@ -601,101 +743,119 @@ project directions within the scope of the lab's current and planned
 funding.}
 \item{Your productivity is expected to be low initially (1-2 years), but
 then ramp up. Expect to submit at least one paper per year in years
-3+. Research is the clear priority-- avoid spending too much time on
+3+. Research is the clear priority -- avoid spending too much time on
 coursework and teaching assistantships.}
-\item{Become the world expert on your thesis topic. Read superficially in a
-broad area, and deep in your chosen area\sidenote{See ``How to read a
-  book'' book and MvdM's slides for some pointers on different kinds
-  of reading.}.}
+\item{Become the world expert on your thesis topic. Read superficially
+  in a broad area, and deep in your chosen area\sidenote{See ``How to
+    read a book'' book and MvdM's slides for some pointers on
+    different kinds of reading. Keep abreast of current developments
+    by signing up for key journal table of contents, and use
+    crowdsourcing for recommendations (e.g.\ Twitter).}.}
 \item{Submit fellowship applications. Help MvdM write grants and review
 papers.}
 \item{Be aware of the program requirements, and everything else that is in
 the PBS grad guide.  Be in charge of these program
 requirements. Coursework and milestones.}
-\item{Attend B4, and present regularly (this is a program requirement)}
+\item{Attend B4, and present regularly (this is a program
+  requirement). Attend lab journal clubs, and take initiative in
+  proposing a journal club topic or paper from time to time.}
 \item{Attend departmental colloquia, and go to lunch with the speaker a few
 times each year.}
-\item{Participate in Dartmouth research events (Neuroscience Day) and major
-conferences in the field.}
+\item{Participate in Dartmouth research events (Neuroscience Day),
+  regional meetings, and major conferences in the field such as the
+  Society for Neuroscience annual meeting\sidenote{Note that you need
+    to be a student member to attend; see \url{www.sfn.org} for
+    info.}, \href{www.cosyne.org}{CoSyNe}, Biological Psychiatry, or
+  others.}
 \item{Participate in rotating lab assignments that change on a term-by-term
 basis (animal care, space, codebase, protocols, journal club chair,
 social chair).}
 \item{Attend a summer school such as Neural Systems \& Behavior at
-MBL\sidenote{\url{www.mbl.edu/nsb}}.}
-\item{Be aware of what is required to take the next step of career paths you
-are considering\sidenote{Some starting points for thinking about
-  industry vs.\ academia include: }. If you are thinking about
-postdocs, identify potential advisors early on and take steps to get
-them to know about you and your work. Read some example letters of
-recommendation, and proacvtively consider what you would like yours to say.}
-\item{If you are going to be away from the lab for more than a day or two,
-ask MvdM (and enter the dates in the lab calendar).}
-\item{Use Twitter wisely: it is a great way to stay in touch with new work
-and useful resources, but it can be a real time sink.}
-\item{Take an active role in monitoring and promoting your mental health.}
+  MBL\sidenote{\url{www.mbl.edu/nsb}; Eric and Alyssa have TAd at it,
+    MvdM and Youki were students, and MvdM has taught there for
+    several years.}, the Okinawa Computational Neuroscience
+  Course\sidenote{Eric was a student, and MvdM has TAd at it.}, and
+  others.}
+\item{Be aware of what is required to take the next step of career
+  paths you are considering\sidenote{A great starting points for
+    thinking about industry vs.\ academia is
+    \href{https://www.amazon.com/Navigating-Path-Industry-Managers-Academics-ebook/dp/B00NABNFVW}{this
+      book}; lab alumni are also a great resource.}. If you are
+  thinking about postdocs, identify potential advisors early on and
+  take steps to get them to know about you and your work. Read some
+  example letters of recommendation, and proactively consider what you
+  would like yours to say.}
+\item{If you are going to be away from the lab for more than a day or
+  two, let MvdM know and enter the dates in the \href{ADD LAB CALENDAR
+    LINK}{lab calendar}.}
+\item{Take an active role in monitoring and promoting your mental
+  health\sidenote{Some starting points for online resources include
+    \href{https://www.gograd.org/resources/grad-student-mental-health/}{GoGrad},
+    Dartmouth's graduate school
+    \href{https://graduate.dartmouth.edu/academics/academic-calendar/grad-mental-health-awareness-month-2018}{Mental
+      Health Awareness program} and
+    \href{https://graduate.dartmouth.edu/about/life-community/student-services/health-wellness}{Health
+      \& Wellness resource list}.}.}
+\item{Don't forget that this is a special time in your life where you get
+  to immerse yourself in a topic you are passionate about.}
 \end{itemize}
 
 % techs
 \section{Research Technicians}
 
 \begin{itemize}
+\item{Model good lab practices such as recordkeeping, labeling, and
+  organization of lab spaces.}
 \item{Work regular hours as defined by your contract. Flexibility is
 encouraged, but seek approval from MvdM first.}
-\item{cc MvdM on all PCARD transactions. Request permission first for
-anything unusual and anything over \$500.}
-\item{Discuss attending talks (B4, colloquia) with MvdM first before
-  going.}
+\item{cc MvdM on all PCARD transactions when you send them to the
+  departmental administrator for reconciliation. Request permission
+  first for anything unusual and anything over \$500.}
+\item{Discuss attending talks (B4, departmental colloquia) with MvdM
+  first before going.}
 \end{itemize}
 
 % ugrad
 \section{Undergraduates}
 
-If you do animal work, be reliable and punctual.
-
-Letters of recommendation. You can expect me to write letters of
-recommendation for you if you have worked in the lab for a year (three
-terms) or more.
-
-Funding sources for research and travel.
-
-\section{Code of Conduct}
-
-The lab is committed to providing a safe, friendly, and accepting
-environment for everybody. We will not tolerate any verbal or physical
-harassment or discrimination on the basis of gender, gender identity
-and expression, sexual orientation, disability, physical appearance,
-body size, country of origin, native language, race, or religion. We
-will not tolerate intimidation, stalking, following, unwanted
-photography or video recording, sustained disruption of talks or other
-events, inappropriate physical contact, and unwelcome sexual
-attention. 
-
-If you notice or experience any of these, please tell MvdM. If MvdM is
-the cause of your concern, there are a number of trusted sources
-available\sidenote{}. Please be assured that your concerns will be
-taken seriously, that you will be listened to, and that you can share
-them without fear of retaliation. You should be aware of the
-distinction between {\it private resources} and {\it confidential
-  resources}\sidenote{Private resources are legally obligated to share
-  a disclosure of sexual misconduct with the Title IX office,
-  including all details that are known. This is to ensure adequate
-  support for those who may need it. Confidential resources may not
-  share any information (with very few exceptions).}.
-
-Important resources:
-
 \begin{itemize}
-\item{Dartmouth policies}
-\item{PBS diversity page}
-\item{Confidential resources: WISE, Dick's House, ...}
-\item{Private resources: MvdM, department chair, ...}
+\item{Participating in research is different from taking a
+  class. Coursework typically consists of specific assignments with
+  instructions which you can follow. Research typically centers on a
+  question or objective, and you will need to figure out how to make
+  progress with it. Take an active role in identifying how to measure
+  that progress, and how to tell when you are stuck. If you are stuck,
+  discuss possible solutions on Slack and/or with other lab members.}
+\item{Especially if you do animal work, reliability and punctuality is
+  crucial. Be realistic about the time you can commit when you have to
+  balance exams and other activities, and plan ahead.}
+\item{Letters of recommendation. You can expect me to write letters of
+  recommendation for you if you have worked in the lab for a year
+  (three terms) or more\sidenote{When requesting letters of
+    recommendation, please allow sufficient time (at least two
+    weeks). If you are applying to multiple programs, provide a single
+    document, such as a spreadsheet, listing the key information for
+    each. When requesting letters, attach your personal statement, CV,
+    and specific details you would like to be highlighted in the
+    letter. Send a reminder email a few days before each deadline if
+    you haven't yet received confirmation that a letter has been
+    submitted.}.}
+\item{Learn by observation: pay careful attention to how senior lab
+  members do things, and copy them.}
+\item{Learn to code. This is one of the most useful skills you can
+  learn -- not only is it essential for doing research, but it is a
+  highly transferable skill.}
+\item{Be proactive about identifying funding sources for research and
+  travel, and be aware of the requirements of your
+  funding\sidenote{For instance, WISP requires you to present a poster
+  at the end of your first two terms in the lab.}.}
 \end{itemize}
 
 \section{Visitors to the lab}
 
-Please ask MvdM for permission first. Some visitors lack the context
-to interpret what they see in the lab.
-
+Do not bring visitors\sidenote{Anyone who does not have their own
+  swipe card access is considered a visitor.} into the Moore Hall
+basement without asking MvdM for permission first.
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%
 %%% DOING GOOD SCIENCE %%%
@@ -708,18 +868,18 @@ scientists use.
 
 \section{Failing fast and often, but learn from your mistakes}
 
-Science involves a lot of trial and error. You will be asking
-questions whose answers are often not yet known, using combinations of
-techniques and analyses that do not yet exist or have not been applied
-to your particular question. So you want to find ways to learn from
-errors as quickly as possible, and ways to avoid making them in the
-first place.
+\newthought{Science involves a lot of trial and error}. You will be
+asking questions whose answers are often not yet known, using
+combinations of techniques and analyses that do not yet exist or have
+not been applied to your particular question. So you want to find ways
+to learn from errors as quickly as possible, and ways to avoid making
+them in the first place.
 
-The general principle to do this is to find ways to get feedback
-often. For projects that are at the idea stage, talk with your peers
-about it, and solicit feedback from more senior colleagues. Find out
-what the likely pitfalls and challenging steps are, and who has
-already tried or even solved them before.
+A general principle to accelerate learning is to find ways to get
+feedback often. For projects that are at the idea stage, talk with
+your peers about it, and solicit feedback from more senior
+colleagues. Find out what the likely pitfalls and challenging steps
+are, and who has already tried or even solved them before.
 
 For projects that are experimental, the same idea applies: find a
 setup in which the feedback cycle is as short as it can be. For
@@ -737,14 +897,12 @@ that you should find ways to get feedback about whether each component
 is working correctly. For instance, inspect your tetrodes under a
 microscope before attaching them to the interface board.
 
-For analysis projects, a similar logic again applies: formulate
-expectations about what the output of a given analysis step should
-look like. 
-
-For all of these processes, apply a hacker/startup mindset that takes
-the quickest path towards a minimal working example or proof of
-principle. At that point, if the results look promising, you should
-clean up, improve and document things.
+For analysis projects, a similar logic again applies: {\it formulate
+  expectations about what the output of a given analysis step should
+  look like}, and then verify. For all of these processes, apply a
+hacker/startup mindset that takes the quickest path towards a minimal
+working example or proof of principle. At that point, if the results
+look promising, you should clean up, improve and document things.
 
 Often, things will not work. This is not always a problem -- sometimes
 you just want to try something and only follow up if it looks like
@@ -754,14 +912,21 @@ next, will help you (and others) identify what the problem might
 be. Making the same mistake twice is not a good use of time and
 resources.
 
-\section{Documentation and taking good notes}
+\section{Documentation and taking good notes}\label{sec:notes}
 
-One way to avoid making the same mistake twice or to avoid making them
-in the first place is to have good documentation.
-
-A related but different reason to care about documentation is that a
-desirable property of a scientific study is that it should be possible
-for others to replicate the result.
+\newthought{One way to avoid} making the same mistake twice or to
+avoid making them in the first place is to have good
+documentation. Getting frequent feedback as described above is
+important, but given feedback you then need to solve the {\it credit
+  assignment problem}: which of your actions do you need to change to
+improve things?\sidenote{The algorithmic and neural basis of the
+  credit assignment problem is one of the lab's scientific interests,
+  and core issue in the field of reinforcement learning.}  Lab notes
+are important in remembering what actions you took in the first place,
+so that you can better determine which to change. A related but
+different reason to care about documentation is that a desirable
+property of a scientific study is that it should be possible for
+others to replicate the result.
 
 \subsection{Lab notes}
 
@@ -782,7 +947,8 @@ Some examples of things to keep notes about:
 \item{Improvising a new way to glue an optical fiber to a silicon
   probe.}
 \item{The filename of a new piece of code you used to try out a new
-  analysis (that you're not ready to commit to GitHub yet), some
+  analysis (that you're not ready to commit to GitHub\sidenote{See
+    section XXX for an introduction to Git and GitHub.} yet), some
   screenshots of the plots it produced, your interpretation of what
   you see, and the next step you plan to take the next day.}
 \end{itemize}
@@ -797,46 +963,95 @@ for this because you can mix protocol sheets and written notes.
 
 \subsection{Protocols}
 
-Protocols are step-by-step instructions of procedures used in the
-lab. Anything you expect to do again in the future should be written
-up as a protocol. If you only do a thing once, you should still take
-notes!
+\newthought{Protocols are step-by-step instructions} of procedures
+used in the lab. Example protocols include:
 
-Protocols are hosted on GitHub. Why?
+\begin{itemize}
+\item{Building a hyperdrive (electrode array) for chronic implantation.}
+\item{Staining brain sections for localizing electrodes.}
+\item{Daily protocol for preparing the ``MotivationalT'' task and
+  running a rat on it.}
+\end{itemize}
 
-What makes a good protocol? Use standard structure (purpose,
-ingredients, equipment). Step-by-step instructions: it should be a
-recipe, and algorithm. The main procedures should be clean and minimal
-so that it is easy to get an overview, but adding copious notes and
-explanations as footnotes/sidenotes/appendices are great. Steps should
-be as easy as possible to follow, with checks/tests that can be used
-to tell if things are working as expected. Pictures can be very
-helpful here.
+\newthought{Anything you expect to do again} in the future is a candidate to be
+written up as a protocol. Writing really good protocols takes a
+substantial amount of work. Getting into the habit of writing up
+something (rather than nothing) and incrementally improving them is a
+great way of getting there. A good goal to aim for is that when you
+are ready to write up your methods in a paper or thesis for
+publication, you can refer to the protocols you have previously
+developed.
 
-Some example protocols are:
+\newthought{Protocols are hosted} on the
+\href{https://github.com/vandermeerlab/mvdmlab-protocols}{mvdmlab-protocols
+  repository} on GitHub\sidenote{See section XXX for a GitHub intro,
+  and note that you need to have been added as a member of the
+  vandermeerlab organization to see this private repository.}. This is
+done first, so that all protocols are in one place that is easy for
+everyone to find. Also, version control for protocols is helpful
+because we can track changes over time and the reasons for those
+changes, as well as refer to specific versions in our
+papers\sidenote{e.g.\ ``We used version XXX of the hyperdrive
+  construction protocol,'' which is helpful for reproducibility.}. It
+also provides a place for comments and discussion related to specific
+protocols, and collaborative editing.
 
-If you use a protocol, update it regularly, even if it is to say when
-it was last used successfully (and by whom).
+\newthought{What makes a good protocol?} Use standard structure
+(purpose, ingredients, equipment). Step-by-step instructions: it
+should be a recipe, and algorithm. The main procedures should be clean
+and minimal so that it is easy to get an overview, but adding copious
+notes and explanations as footnotes/sidenotes/appendices are
+great. Steps should include checks/tests that can be used to tell if
+things are working as expected. Pictures can be very helpful here.
 
+If you use a protocol, contribute to it regularly, even if it is only
+to say when it was last used successfully (and by whom).
 
 \section{Asking good questions}
 
-{\it Questions about science.}
+{\it Scientific questions, hypotheses, and predictions.}
 
-Experiments and analyses are ways of asking nature a question. Your
-goal should never be to obtain a certain answer. You should formulate
-expectations about possible answers and consider if those would in
-fact inform the question you are asking.
+\newthought{A major goal of scientific inquiry} is to iteratively
+develop working models of how the world works. Models of the brain can
+be used to (1) generate predictions about what an individual will do
+in the future based on brain activity now, (2) fix malfunctioning
+brains, and (3) build things like robots or computer programs that
+have abilities similar to brains. Working models of the brain, or some
+component of it like a specific circuit or neuron, are informed by
+experimental data. In general, we don't know what the best model
+is\sidenote{In fact, it seems clear that our current models of the
+  brain aren't very good at all; another way of saying the same thing
+  is that our undestanding of how the brain works is far from
+  complete.}, and so we are motivated to perform experiments to
+improve our models.
 
-Working models are good sources of questions.
+\newthought{In hypothesis-driven research}, the hypothesis is the
+model, and it generates predictions about what we expect to happen
+under various conditions\sidenote{Note the distinction between a
+  hypothesis and a prediction. Something like ``I expect the treatment
+  group to have impaired memory performance compared to the control
+  group'' is not a genuine hypothesis; it is a prediction that follows
+  from some underlying understanding or model (the hypothesis). Try to
+  make your hypothesis explicit. In this example, that could be
+  something like, ``Memory formation is dependent on the NMDA
+  receptor.''}. Experiments can be performed to test those
+predictions. Your goal should not be to obtain a certain answer, but
+rather to obtain information that helps you decide among alternative
+models, refine existing models. You should formulate expectations
+about possible answers and consider if those would in fact inform the
+question you are asking; think about your experimental design,
+statistical power, and control experiments.
 
 {\it Questions about computer code.} 
 
-When troubleshooting computer code, aim to create a \doccls{Minimal,
-  Complete, and Verifiable example}. In doing so, you make it easier
-for others to replicate the problem you are experiencing, helping them
-help you. Moreover, often you'll find that in the process of creating
-such an example, you discover the source of the problem. See
+\newthought{In practice}, a major way you'll be asking scientific
+questions is not only by doing experiments, but also by writing
+computer code to analyze data. When troubleshooting computer code, aim
+to create a \doccls{Minimal, Complete, and Verifiable example}. In
+doing so, you make it easier for others to replicate the problem you
+are experiencing, helping them help you. Moreover, often you'll find
+that in the process of creating such an example, you discover the
+source of the problem. See
 \href{https://stackoverflow.com/help/mcve}{this page} on Stack
 Overflow\sidenote{\url{www.stackoverflow.com}, an excellent resource
   for crowdsourced answers to programming issues.} for more detailed
@@ -845,38 +1060,31 @@ instructions.
 
 \section{Reading papers}
 
-Inspectional, analytical, syntopical
-
-Bibliography management
-
-Find the classic papers and intellectual roots of the question you are
-working on. If this doesn't motivate or energize you at least from
-time to time, ask yourself how much you actually care about your question.
+To be written. Inspectional, analytical, syntopical reading;
+bibliography management software; importance of finding the classic
+papers and intellectual roots of the question you are working
+on. Important resources.
 
 \section{Communication}
 
 \subsection{Writing well}
 
-Clear thesis
-
-Structure of argument
-
-Vomit draft, results packet
-
-Iterating often
-
-Citing: first, best, and most recent (this is a good rule of thumb to
-guide your reading, too.)
-
-Simpler is better
-
-See SOFTWARE SECTION for more info on recommendations.
+To be written. Clear thesis; importance of making the structure of
+your argument clear; results packet, vomit draft, iterating
+often. Work to find the simplest way of making your point. Reading
+aloud helps identify problematic phrases. Cite the first, best, and
+most recent (this is a good rule of thumb to guide your reading, too.)
 
 \subsection{Importance of visuals}
 
-Simpler is better
+To be written. Simpler is better (Tufte design philosophy). Labels
+typically need to be bigger than you think. Use a consistent font
+(Helvetica is good).
 
-See SOFTWARE SECTION.
+\subsection{Giving talks}
+
+To be written. Use ``theory of mind'' to simulate how what you say
+will appear to your audience.
 
 %%%%%%%%%%%%%%%%%%
 %%% FACILITIES %%%
@@ -938,7 +1146,7 @@ a ziploc baggie to it).}
   intended purpose, and use the correct tool for the job. For
   instance, don't use fine scissors to make rough cuts into hard
   materials. Don't use fine forceps to hold metal parts. \sidenote{Quick
-  guide to forceps: \#55 are finest.}}
+  guide to forceps: ``\#55'' and ``\#5 Biologie'' are the finest.}}
 \item{{\it Be safe.} The general lab safety training covers the
   basics, but specific spaces have hazards described below. First Aid
   kits are available in the FAR and in B101.}
@@ -973,14 +1181,52 @@ spaces for the tools you use frequently.
 
 \section{Fine Assembly Room (FAR)}
 
+The general directives about cleanliness and organization above all
+apply. In addition, the following are important:
+
+\begin{itemize}
+\item{If you are working on something, it's okay to leave your work in
+progress on work surfaces; however, please be considerate in how much
+space you take up. Using a tray to hold you work is a great way to
+limit your footprint, and to make it easy for others to use the space
+if they need it.}
+\item{Be particularly on guard for fragile items such as drives and
+  silicon probes.}
+\item{Close glass doors after you open them, and definitely when you
+  leave for the day. They are there to protect sensitive equipment
+  from dust and accidental touch.}
+\end{itemize}
+
 \section{Surgery and anteroom}
 
-If there is any single room that is especially important to be clean
-and organized, this is it!
+\newthought{Surgeries from which animals recover} demand that these
+spaces are kept impeccably clean to minimize the risk of infection. In
+addition, during surgery sometimes time is of the essence, and finding
+what you are looking for quickly can make the difference between
+success and failure. Thus, it is especially important that B99 and
+B100 are organized well.
+
+In particular:
+
+\begin{itemize}
+\item{Clean surfaces before and after surgery with Clidox
+  (disinfectant) and then 70\% alcohol (solvent).}
+\item{Treat the stereotax, pump, anesthesia trolley, and microscope
+  with utmost care -- these are expensive, precision instruments.}
+\item{Be on the lookout for low supply levels. For instance, after
+  finishing a surgery, post to Slack if the oxygen cylinder has 1/4 or
+  less left (there should always be a spare available in surgery).}
+\end{itemize}
 
 \section{Workshop}
 
-Beware the Dremel and the belt sander. Wear gloves and goggles.
+Moore B101 contains several important tools:
+
+\begin{itemize}
+\item{Belt sander. Wear gloves and goggles when using it.}
+\item{Rotary tool. Wear gloves and googles when using it.}
+\item{3D printer.}
+\end{itemize}
 
 \section{Shared facilities}
 
@@ -994,6 +1240,11 @@ Vivarium rooms need to have binders containing weights and animal records.
 
 \section{Offices}
 
+These are located on the ground floor of Moore, in the South wing
+(graduate students) or in the West wing (lab techs and postdocs). The
+grad offices house the lab library, consisting of books from MvdM's
+personal library. Please ask MvdM before taking any book out of Moore,
+and be vigilant about other labs borrowing but not returning them.
 
 %%%%%%%%%%%%%%%%%%
 %%%
@@ -1024,13 +1275,18 @@ resources. These include:
 \end{itemize}
 
 To access some of these repositories, you need to be a member of the
-vandermeerlab organization (URL). Ask MvdM to become a member.
+\href{www.github.com/vandermeerlab}{vandermeerlab organization}. Ask
+MvdM to become a member. Although you can view files on the
+repositories through the GitHub website, you'll need to learn how to
+use \href{https://www.codecademy.com/learn/learn-git}{git} in order to
+use code stored there, and to contribute.
 
 \section{Slack}
 
 \href{Slack}{www.slack.com} is a software platform for having group
 conversations in topic-specific channels. The lab Slack is
-\url{mvdmlab.slack.com}.
+\url{mvdmlab.slack.com}. If you are joining the lab but haven't
+received an invite yet, please let MvdM know.
 
 \begin{marginfigure}%
   \includegraphics[width=\linewidth]{images/slack.png}
@@ -1047,47 +1303,64 @@ occasion to see what is happening.
 
 \section{Wiki}
 
+The lab \href{http://discovery.dartmouth.edu/~mvdm/wiki/}{wiki}
+contains data analysis tutorials and other resources.
+
 \section{Calendar}
 
-The lab has a Google account (credentials: ) which is associated with
-a number of calendars. All experiment rooms and surgery have their own
-calendar, which you should use to schedule your planned use of these
-rooms. The main lab calendar contains labmeeting times and other
-scheduled events (e.g.\ journal clubs).
+The lab has a Google account (username \doccls{mvdmlab}, password
+\doccls{ozomatl1}) which is associated with a number of calendars. All
+experiment rooms and surgery have their own calendar, which you should
+use to schedule your planned use of these rooms. The main lab calendar
+contains labmeeting times, other scheduled events (e.g.\ journal
+clubs), and times different lab members will be away.
 
 \section{Mailing list}
 
 The lab mailing list is used for announcements such as lab meetings
-and journal clubs.
+and journal clubs. If you are joining the lab, MvdM will sign you up.
 
-\section{Lab servers}
+\section{Lab server}
 
-\subsection{Datavault}
+The lab server, physically located in MvdM's office, is the local
+storage point for all the lab's data. Information on how to access it
+can be found in the \#server channel on Slack. It contains a number of
+folders, most importantly:
 
-\subsection{Continuous integration server}
+\begin{itemize}
+\item{{\bf Promoted}: data folders that have been
+  preprocessed\sidenote{See section XXX for an explanation of what
+    data preprocessing enatils.} and can be used for data analysis.}
+\item{{\bf InProcess}: data that is in the process of being promoted.}
+\item{{\bf Incoming}: raw data. After acquiring data in an experiment,
+  make sure to upload the data to the server; see the Computing
+  section for details.}
+\item{{\bf Tutorials}: example data sessions used for data analysis
+  tutorials.}
+\item{{\bf Dropoff}: a temporary folder that can be used for sharing
+  files across the lab.}
+\end{itemize}
 
 \section{Others}
 
-We use Dropbox to facilitate sharing of files across computers. It
-should never be used for storage of data!
-
-Dropbox credentials:
-
-However, if you see an opportunity to promote any files currently on
-Dropbox to the relevant GitHub repo, please do so (or create an issue
-first).
+We use Dropbox\sidenote{Credentials are \url{mvdmlab@gmail.com}$/${\tt
+    ozomatl1}.} to facilitate sharing of files across computers. It
+should never be used for storage of data! If you see an opportunity to
+promote any files currently on Dropbox to the relevant GitHub repo,
+please do so (or create an issue first).
 
 %%%%%%%%%%%%%%%%%
 %%% COMPUTING %%%
 %%%%%%%%%%%%%%%%%
 \chapter{Computing}
 
-Computing plays an increasingly important role in (neuro)science and
-is central to many aspects of the lab's workflow. The safety of your
-hard-won data, the integrity and reproducibility of your analyses and
-results, the ongoing development and sharing of the best protocols and
-procedures, and the speed with which you can accomplish your goals all
-depend critically on correct use of the lab's computing resources.
+\newthought{Computing plays an increasingly important role} in
+(neuro)science and is central to many aspects of the lab's
+workflow. The safety of your hard-won data, the integrity and
+reproducibility of your analyses and results, the ongoing development
+and sharing of the best protocols and procedures, and the speed with
+which you can accomplish your goals all depend critically on correct
+use of the lab's computing resources.
 
 Because many of these are shared (experimental machines) and/or
 inherently collaborative (lab database, codebase) it is especially
@@ -1180,11 +1453,6 @@ The above considerations for shared machines apply. In addition:
   you are absolutely certain that it has been backed up correctly.}
 \end{itemize}
 
-\section{Lab web services accounts}
-
-gmail: mvdmlab@gmail.com
-dropbox: mvdmlab@gmail.com
-skype: vandermeerlab (for contacting suppliers and other lab-related business)
 
 \section{Printing}
 
@@ -1200,23 +1468,16 @@ protocols.
 
 \section{Skills}
 
-Growth mindset.
+To be written.
 
 Basic skills: learning about your filesystem, what makes sense to
-store where
-
-Learn to use the command line.
+store where. Learn to use the command line.
 
 Learn to code. MATLAB and Python are the most important. In our
 subfield of neuroscience, MATLAB is still the most used, but Python is
 gaining ground.
 
-Good coding practices.
-
-Style guide.
-
-Other important software: reference manager, LaTeX if you plan to
-write a paper or a thesis. Adobe Creative Suite for making figures.
+Good coding practices; style guides.
 
 How to ask good questions. Stack Overflow on how to create a
 \href{https://stackoverflow.com/help/mcve}{minimal, complete, and
@@ -1451,137 +1712,6 @@ include:
 \end{itemize}
 
 
-%%%%%%%%%%%%%%%%%%%%
-%%% ANIMAL CARE %%%%
-%%%%%%%%%%%%%%%%%%%%
-\chapter{Animal care and recordkeeping}
-\label{sec:animal-management}
-
-Keeping detailed and accurate records on each of our animals is an
-IACUC requirement (and indirectly a federal issue), as well as
-scientifically important.
-
-The main principles are that for any animal that is currently alive,
-there must a binder (or a section in a binder) with that animal that
-contains an up to date record of all procedures\sidenote{What counts
-  as a procedure: anything beyond what's required to change a cage or
-  weigh an animal. If in doubt, log it anyway.} performed on that
-animal, as well as records of their weight.
-
-\greybox{\textsf{Failure to log a procedure is a serious oversight
-    that, if discovered, could have real consequences, such as
-    creating more work for everyone, or making our IACUC renewals more
-    painful. Don't let it happen to you.}}
-
-When performing invasive procedures (surgery) and when administering
-drugs, CCMR requests that these are reported using a special cage
-card\sidenote{Picture of procedure cage card.}. Writing procedures on
-these cards is {\it not} sufficient logging: you also need to log the
-procedure(s) in the animal's binder.
-
-Once you euthanize and animal (or request it to be euthanized),
-collect all weight and procedure logs, along with any additional
-information (notes from behavior, for instance), scan them into a
-single PDF\sidenote{The departmental copier/scanner is great for this,
-you can feed it a pile of documents and it can email you a PDF.} and
-upload to the data vault.
-
-If you are working with animals, read the Animal Recordkeeping
-Protocol (link), which provides detailed procedures for the above.
-
-\section{Animal ownership and responsibility}
-
-By default, CCMR staff will feed, water, and change cages for all our
-animals. We pay them a {\it per diem} fee to do this.
-
-By default, all animals receive {\it ad lib}\sidenote{Ad libitem is
-  the Latin phrase for, literally, ``to your libido'', i.e.\ as much
-  as desired. Incidentally, {\it i.e.}\ is Latin for {\it id est},
-``it is''.} food and water. 
-
-We can also request CCMR to feed rats 18g/day. This is a useful amount
-that prevents rats from getting obese. To request this, use the
-relevant cage card\sidenote{This one.}.
-
-For any other food/water regimens, you'll need to use the
-``Experimenter will feed/water'' cage card. Doing so implies that the
-experimenter listed takes \doccls{ownership}\sidenote{As the owner of
-  an animal, you are responsible for logging its weight and all
-  procedures. If the animal is food and/or water-restricted, you are
-  responsible for supplying those things, and logging that you have
-  done so.} of that animal.
-
-When animals first arrive, they are typically group-housed (multiple
-animals per cage). They are named\sidenote{Rats are named Rxxx, where
-  xxx is a 3-digit counter that it incremented with each new
-  animal. Mice are named Mxxx.} and start out with \doccls{communal}
-status. Communal animals do not have an owner yet. They are weighed
-weekly by the \doccls{Communal Animal Caretaker}\sidenote{Note that to
-  track weights of group-housed animals, some kind of mark needs to be
-  used. The lab convention is to write numbers 1, 2, 3 etc.\ on the
-  base of the tail with a Sharpie. 1 indicates the animal with the
-  lowest number. Mouse tails are too small to write numbers; stripes
-  or rings can be used instead.}. When communal animals are below 400g
-in weight, the Caretaker also handles them weekly (about 5 minutes per
-animal appears to be the sweet spot, although you may want to take
-ownership of an animal that will be implanted with a hyperdrive early
-on so that it can be handled more). When communal animals reach 400g,
-the Caretaker separates them into individual cages so that CCMR can
-feed them 18g/day.
-
-These procedures are described in more detail in the Animal
-Recordkeeping Protocol.
-
-%%%%%%%%%%%%%%%%%%
-%%% DEPARTMENT %%%
-%%%%%%%%%%%%%%%%%%
-\chapter{PBS and Dartmouth}
-
-\section{Training required by Dartmouth}
-
-General lab safety training
-
-\section{Important people and contact info}
-
-PBS staff
-
-CCMR 
-
-\section{Dartmouth resources}
-
-Dick's House
-
-Graduate School
-
-Postdoc Association
-
-Workshops
-
-Dartmouth design language and files
-
-%%%%%%%%%%%%%%%%%%
-%%% WIDE WORLD %%%
-%%%%%%%%%%%%%%%%%%
-\chapter{Beyond the lab}
-
-Resources on the internet
-
-Industry vs.\ academia
-
-Upper Valley
-
-
-%%% APPENDIX %%%
-
-\chapter{Appendix: Subject email format template}
-
-Subject line should read:
-
-\chapter{Appendix: Yearly evaluation forms}
-
-Graduate students
-
-Staff
 
 \backmatter
 
